@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+   <div class="container">
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
@@ -51,9 +52,7 @@
 
       </header>
       <section class="catalog-hotel">
-        
-        <!--Временно hidden-->
-        <h2 class="visually-hidden "hidden>Список отелей с фильтрами</h2>
+        <h2 class="visually-hidden ">Список отелей с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="post">
          <fieldset class="catalog-filter-group">
            <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -78,7 +77,6 @@
              </li>
            </ul>
          </fieldset>
-
          <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title catalog-type">Тип жилья:</legend>
             <ul class="catalog-filter-list">
@@ -193,11 +191,9 @@
         <label for="amount">Гостиниц на странице:</label>
         <input type="number" min="4" max="10" step="2" id="amount" name="amount">
        </div>
-     </section>
-    
+     </section>    
    </main>
-
-   <footer class="page-footer">
+   
     <section class="newsletter">
       <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
       <p class="page-footer-description">Только полезная информация и никакого спама,
@@ -210,7 +206,8 @@
             </button>
          </form>      
     </section>
-  <div class="page-footer-container">
+  </main>
+    <footer class="page-footer">
     <section class="footer-social">
       <h2 class="visually-hidden">Наши соц.сети</h2>
       <ul class="footer-social-list">
@@ -239,7 +236,7 @@
     </section>  
     <p class="about-text"><a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
     </p>
- </div>
+  </div> 
    </footer>
   </body>
 </html>
