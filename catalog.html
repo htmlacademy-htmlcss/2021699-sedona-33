@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+   <div class="container">
     <header class="page-header">
       <nav class="navigation">
         <a class="navigation-logo" href="index.html">
@@ -13,44 +14,45 @@
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="index.html ">Главная</a>>
+            <a class="navigation-link" href="index.html ">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="about.html">О Седоне</a>>
+            <a class="navigation-link" href="about.html">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current">Гостиницы</a>>
+            <a class="navigation-link navigation-link-current">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>>
+            <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#"><span class="visually-hidden">Мне нравится</span></a>>
+            <a class="navigation-link" href="#"><span class="visually-hidden">Мне нравится</span></a>
           </li>
           <li class="navigation-item">
-            <a class="button navigation-link" href="#">Хочу сюда!</a>>
+            <a class="button navigation-link" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
     </header>
-   <main class="main-inner">
+   <main class="main-container main-inner">
+   <div class="page-container">
     <div class="index-features">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>  
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="visually-hidden" href="index.html">Главная</a>
+            <a class="breadcrumbs-link breadcrumbs-home " href="index.html"><span class="visually-hidden">Главная</span></a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Каталог</a>
+            <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ul>
 
       </header>
       <section class="catalog-hotel">
-        <h2 class="visually-hidden">Список отелей с фильтрами</h2>
+        <h2 class="visually-hidden ">Список отелей с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="post">
          <fieldset class="catalog-filter-group">
            <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -75,9 +77,8 @@
              </li>
            </ul>
          </fieldset>
-
          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Тип жилья:</legend>
+            <legend class="catalog-filter-title catalog-type">Тип жилья:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
@@ -99,24 +100,31 @@
               </li>
             </ul>
          </fieldset>
-         <button class="button-light" type="submit">Применить</button>
-         <input type="reset" value="Сбросить">
+         <div class="button-selection">
+         <button class=" button-all" type="submit">Применить</button>
+         <br>
+         <input class="button-reset" type="reset" value="Сбросить">
+        </div>
        </form>
-    </div> 
+    </div>  
+    <div class="sorting-container">
       <select class="select-control" aria-label="Сортировка">
-         <option value="popular">Сначала популярное</option>
-         <option value="cheap">Сначала дешёвое</option>
-         <option value="expensive">Сначала дорогое</option>
+        <option value="popular">Сначала популярное</option>
+        <option value="cheap">Сначала дешёвое</option>
+        <option value="expensive">Сначала дорогое</option>
       </select>
-      <a href="#" class="button button-light">
-         <span class="visually-hidden">Показать список</span>
+  
+      <a href="#" class="button button-light" >
+        <span class="visually-hidden">Показать список</span>
+      </a>
+      <a href="#" class="button" >
+        <span class="visually-hidden">Показать карточки</span>
       </a>
       <a href="#" class="button">
-         <span class="visually-hidden">Показать карточки</span>
-      </a>
-      <a href="#" class="button">
-         <span class="visually-hidden">Показать слайд-шоу</span>
-      </a>
+          <span class="visually-hidden">Показать слайд-шоу</span>
+       </a>
+    </div>
+    <div class="catalog-column">
        <ul class="hotel-list">
          <li class="hotel-card">
            <a class="hotel-card-link" href="hotel.html">
@@ -160,11 +168,9 @@
          </li>
       </ul>
          <button class="button pagination-show-more" type="button">Загрузить еще</button>
+    </div>
+    <div class="pagination-container">
       <ul class="pagination">
-         <li class="pagination-item">
-           <a class="pagination-link pagination-prev pagination-disabled">
-           </a>
-         </li>
          <li class="pagination-item">
            <a class="pagination-link pagination-current">1</a>
          </li>
@@ -178,34 +184,33 @@
            <a class="pagination-link" href="#">4</a>
          </li>
          <li class="pagination-item">
-           <a class="pagination-link" href="#">5</a>
+           <a class="pagination-link" href="#">...</a>
          </li>
          <li class="pagination-item">
-           <a class="pagination-link pagination-next" href="#">
-           </a>
-         </li>
+          <a class="pagination-link" href="#">10</a>
+        </li>
       </ul>
       </form>
-       <div class="sort-item"
-        <label for="amount">Гостиниц на странице:</label>
-        <input type="number" min="4" max="10" step="2" id="amount" name="amount">
+       <div class="sort-item">
+        <label class="hotel-number" for="amount">Гостиниц на странице:</label>
+        <input class="number" type="number" min="4" max="10" step="2" id="amount" name="amount">
        </div>
-     </section>
+   </div>
+     </section>  
+   </div>  
    </main>
-
-   <footer class="page-footer">
+   
     <section class="newsletter">
       <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
       <p class="page-footer-description">Только полезная информация и никакого спама,
        честное бойскаутское!</p>
          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label for="newsletter-email">Email</label>
-            <input class="field"  placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
-            <button class="button newsletter-button" type="submit">
-              <span class="visually-hidden">Отправить</span>
-            </button>
+            <input class="field"  placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email" required>
+            <button class="button newsletter-button" type="submit">Подписаться</button>
          </form>      
     </section>
+   </main>
+    <footer class="page-footer">
     <section class="footer-social">
       <h2 class="visually-hidden">Наши соц.сети</h2>
       <ul class="footer-social-list">
@@ -230,11 +235,11 @@
       <h2 class="visually-hidden">Контакты</h2>
         <address class="footer-contacts-address">
           <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        </address>
-        <p class="about-text"><a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
-        </p>
+        </address>  
     </section>  
- 
+    <p class="about-text"><a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+    </p>
+  </div> 
    </footer>
   </body>
 </html>
