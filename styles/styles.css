@@ -45,18 +45,20 @@ body {
     width: 1200px;
     padding: 0 40px;
     margin: 0 auto;
-    background-color: #FFFFFF;
+    background-color:  #E5E5E5;;
     color: #000000 ;
   }
 
 .page-header {
     color:  #000000;
     background-color:#ffffff;
+    margin-bottom: -15px;
   }
 
 .navigation {
     display: flex;
     width: 1060px;
+   padding: 0;
     margin: 0 auto ;
   }
 
@@ -66,6 +68,7 @@ body {
     display: block;
     width: 140px;
     padding: 0;
+    margin: 0;
     margin-right: 30px;
   }
 
@@ -97,10 +100,13 @@ body {
   }
 
   .navigation-item{
+    margin: 0;
    padding: 0;
   }
 .navigation-user{
     width: 305px;
+    margin: 0;
+    padding: 0;
     margin-left: auto;
     justify-content: end;
   }
@@ -118,14 +124,25 @@ ul .button.navigation-link{
     margin: 0;
     padding: 0;
   }
+  .navigation-icon{
+    fill: #000000;
+  }
+  .navigation-icon:hover{
+    fill: #756257;
+  }
+  .navigation-icon:active{
+    fill: #756257;
+    opacity: 0.3;
+  }
 
   .like{
-    margin-right: 15px;
+    margin-right: 17px;
   }
 
 .navigation-link {
   position: relative;
     display: block;
+    margin: 0;
     padding: 0 17px;
     padding-top: 20px;
     padding-bottom: 19px;
@@ -143,7 +160,8 @@ ul .button.navigation-link{
 .button.navigation-link{
     width: 130px;
     padding: 9px 15px;
-    margin: 14px 2px;
+    padding-bottom: 8px;
+    margin: 14px 0;
     font-size: 16px;
     line-height: 20px; 
     text-align: center;
@@ -158,21 +176,23 @@ ul .button.navigation-link{
   }
   .button.navigation-link:focus{
     background: #615048;
-    border: 3px solid #83B3D3;
+    outline: 3px solid #83B3D3;
+    
   }
   .button.navigation-link:active{
     color: rgba(255, 255, 255, 0.3);
     background: #615048;
   }
 .main-container {
+  background-color: #ffffff;
     flex-grow: 1;
     padding-top: 5px;
    
   }
   
 .main-welcome {
+    position: relative;
     padding-top: 51px; 
-    padding-bottom: 83px;
     color:#000000;
     background-color: #ffffff;
     background-image:url("../images/index-background.jpg");
@@ -183,11 +203,16 @@ ul .button.navigation-link{
 .welcome-image{
     display: block;
     margin: 0 auto;
+    padding-bottom: 83px;
   }
 .divider{
+  position: absolute;
+bottom: 0;
   display: block;
+ 
   margin: 0 auto;
   }
+  
 
 .welcome-block-description{
     margin-top: 0;
@@ -196,10 +221,15 @@ ul .button.navigation-link{
     color:#333333;
     background-color: #ffffff;
     text-align: center;
+  
   }
   
 .welcome-description-sedona{
+  margin: 0;
+  padding: 0;
     margin-bottom: 31px;
+    padding-top: 63px;
+   
     font-size: 30px;
     line-height: 36px;
     color:#000000;
@@ -210,15 +240,16 @@ ul .button.navigation-link{
   }
 
 .welcome-description{
-  margin-top: 0;
-  margin-bottom: 80px;;
+  margin: 0;
+  padding-bottom: 80px;;
 }
 .advantages-list{
     display: flex;
     margin: 0;
     padding: 0;
-    color:  #000000;
-    background-color:#E5E5E5;
+    color: #000000;
+    /* background-color:#E5E5E5; */
+    background-color: rgba(131, 179, 211, 0.12);
     flex-wrap: wrap;
     list-style: none;
     text-align: center;
@@ -246,8 +277,9 @@ ul .button.navigation-link{
       
 }
 .advantages-title{
+  padding: 0;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   width: 400;
   text-align: center;
   font-weight: 700;
@@ -270,8 +302,11 @@ ul .button.navigation-link{
   padding: 0;
   width: 220px;
   padding: 0 90px;
-  padding-bottom: 88px;
+  /* padding-bottom: 89px; */
   text-align: center;
+}
+.advantages-road{
+  background-color: rgba(131, 179, 211, 0.08);;
 }
 .advantages-icon{
   display: block;
@@ -299,15 +334,18 @@ margin-top: 91px;
   align-items: center;
   margin: 0;
   padding: 0;
+  /* padding-bottom: 10px; */
   list-style-type: none;
 }
 .advantages-item-city{
   margin: 0;
   padding: 0;
+  padding-bottom: 10px; 
   width: 33.3333%;
   list-style-type: none;
 }
 .advantages-title-infrastructure{
+  margin: 0;
   width: 250px;
     
     margin-bottom: 20px;
@@ -324,7 +362,7 @@ margin-top: 91px;
   width: 250px;
     margin: 0;
     padding: 0;
-    margin-bottom: 80px;
+    margin-bottom: 79px;
     padding: 0 75px;
     font-size: 18px;
     line-height: 21px;
@@ -338,7 +376,6 @@ margin-top: 91px;
     background-color: #FFFFFF;
 }
 .advantages-place{
-    
   width: 33.3333%;
     margin: 0;
     padding: 0;
@@ -349,7 +386,7 @@ margin-top: 91px;
   margin: 0;
   padding:0 75px;
   margin-top: 98px;
-  margin-bottom: 28px;
+  margin-bottom: 27px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -359,15 +396,14 @@ margin-top: 91px;
 .advantages-description-attractions{  
   margin: 0;
   padding: 0;
-  padding: 0 75px;
+  padding: 0 79px;
   margin-bottom: 108px;
   list-style-type: none;
 }
 .selection-hotel-item{
     width: 720px;
     margin: 0 240px;
-    padding: 0;
-    padding-top: 91px;
+    padding-top: 92px;
     margin-bottom: 30px;
     font-weight:700;
     font-size: 30px;
@@ -377,12 +413,14 @@ margin-top: 91px;
  }
 
 .selection-hotel-description{
-    margin-bottom: 70px;
+    margin-top: 29px;
+    margin-bottom: 56px;
     font-weight:400;
     font-size: 22px;
     line-height: 26px;
     padding: 0 auto;
     text-transform: none;
+    box-sizing: border-box;
  }
 
 .button.button-all{
@@ -399,13 +437,19 @@ margin-top: 91px;
     line-height: 36px;  
     text-align: center;
     text-transform: uppercase;
+    border-radius: 10px;
+    text-decoration: none;
+    box-sizing: border-box;
+   
+
  }
  .button.button-all:hover{
    background: #615048;
  }
  .button.button-all:focus{
   background: #615048;
-  border: 3px solid #83B3D3;
+  box-sizing: border-box;
+  outline: 3px solid #83B3D3;
  }
  .button.button-all:active{
   color: #FFFFFF;
@@ -415,29 +459,40 @@ margin-top: 91px;
 
 .button.newsletter-button{
     display: inline-block;
+    position: relative;
     flex-shrink: 0;
     width: 200px;
     height: 60px;
     margin: 0;
-    padding: 0;
+    padding: 0 auto;
     flex-shrink: 0;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height:26px;
     color: #FFFFFF;
     background-color:#83B3D3;
-    align-items: center;
+    align-items:center;
     text-align: center;
     text-transform: uppercase; 
+    border: none;
     border-radius: 0px 10px 10px 0px;
+    box-sizing: border-box;
+    cursor: pointer;
  }
  .button.newsletter-button:hover{
   background: #68A2CA;
  }
  .button.newsletter-button:focus{
-  background: #68A2CA;
+  background-color: #68A2CA;
+  box-sizing: border-box;
   border: 3px solid #756257;
  }
+ .button.newsletter-button:active{
+   background-color: transparent;
+ }
+
+ 
+
 .transparent:active{
   color: #FFFFFF;
   opacity: 0.3;
@@ -464,17 +519,20 @@ margin-top: 91px;
     padding-bottom: 94px;
     width: 800px;
     
+    
 }
 
 .page-footer{
   display: flex;
-  margin-top: 40px;
-
+  padding-top: 22px;
+  padding-bottom: 45px;
+ background-color: #FFFFFF;
   align-items: center;
 
 }
 
 .page-footer-title{
+    margin: 0;
     margin-bottom:  30px;;
     font-weight: 700;
     font-size: 30px;
@@ -486,10 +544,9 @@ margin-top: 91px;
  }
 
 .page-footer-description{
-  
     margin: 0;
     padding: 0;
-    margin-bottom: 46px;
+    margin-bottom: 45px;
     font-weight: normal;
     font-size: 22px;
     line-height: 26px;
@@ -498,41 +555,51 @@ margin-top: 91px;
  }
 
 .footer-contacts-address-phone{
+     
+     padding: 10px;
     color: #000000;
     font-size: 40px;
     line-height: 40px;
     text-align: center;
     text-transform: uppercase; 
+    font-style: normal;
  }
 
 .field{
     min-width: 600px;
     height: 60px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
     margin: 0;
     padding: 0;
+    padding-left: 22px;
+    background: #F2F2F2;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 10px 0 0 10px ;
+    letter-spacing: 0.5px;
+}
+
 }
 .field:hover{
-  background: #E6E6E6;
-  /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+  background-color: #E6E6E6;
   border-radius: 10px;
 }
 .field:focus{
   background: #E6E6E6;
-border: 3px solid #83B3D3;
-border-radius: 0px 10px 10px 0px;
-/* transform: matrix(-1, 0, 0, 1, 0, 0); */
+  box-shadow: 3px solid #83B3D3;
+  border-radius: 10px 0px 0px 10px;
 }
-.field:invalid{
-  background: #FFFFFF;
-  border: 2px solid #FF5757;
+.field:disabled{
+  outline: 2px solid #FF5757;
   box-sizing: border-box;
-  border-radius: 0px 10px 10px 0px;
-
+  border-radius: 10px 0px 0px 10px;
 }
 
 .footer-social{
     margin-left:72px;
-    margin-right: 60px;
+    /* margin-right: 60px; */
     max-width: 155px;
 }
 .footer-social-list{ 
@@ -541,17 +608,21 @@ border-radius: 0px 10px 10px 0px;
   margin: 0;
   padding: 0;
   list-style-type: none;
+  margin-right:30px ;
 }
 
 .footer-contacts{
     width: 720px;
-    margin-right: 55px;
     text-align: center;
+    margin-left: 31px ;
 }
 .footer-social-item{
   margin: 0;
   padding: 0;
   margin-right: 30px;
+}
+.footer-social-item:nth-child(3n) {
+  margin-right: 0;
 }
 .footer-social-link:hover{
   background: #68A2CA;
@@ -561,8 +632,8 @@ border-radius: 0px 10px 10px 0px;
   order: 0;
   flex-grow: 0;
   margin: 10px 0px;
-  border: 3px solid #83B3D3;
   box-sizing: border-box;
+  border: 3px solid #83B3D3;
   border-radius: 10px;
 }
 .footer-social-link:active{
@@ -577,26 +648,36 @@ border-radius: 0px 10px 10px 0px;
   box-sizing: border-box;
   border-radius: 10px;
 }
+a[href^="tel:"] {
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #000000;
+}
 .footer-contacts-address-phone:active{
   color: #756257;
-opacity: 0.3;
+ opacity: 0.3;
 }
 .htmlacademy-link.about-text{
     width: 115px;
-    margin-left: auto;
     padding: 0;
 }
-htmlacademy-link:hover{
-  background: #756257;
+.about-text{
+  margin-left: auto;
+  margin-right: 72px;
 }
-htmlacademy-link:focus{
-  background: #756257;
+
+.htmlacademy-link:hover{
+  fill: #756257;
+}
+.htmlacademy-link:focus{
+ fill: #756257;
   border: 3px solid #83B3D3;
   box-sizing: border-box;
   border-radius: 10px;
 }
-htmlacademy-link:active{
-  color: #756257;
+.htmlacademy-link:active{
+  fill: #756257;
   opacity: 0.3;
 }
 
