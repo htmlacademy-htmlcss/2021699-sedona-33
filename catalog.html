@@ -116,7 +116,35 @@
               </li>
             </ul>
          </fieldset>
-         <!-- Здесь можно заменить на класс button общий и button-all -->
+         <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Стоимость,₽:</legend>
+          <div class="range-wrapper-inputs">
+            <div class="oo">
+            <label class="catalog-filter-label">
+               <input class="range-input range-min"  type="text" inputmode="numeric" value="0" name="min-price"> 
+               от
+            </label>
+          </div>
+          <div class="oo">
+            <label class="catalog-filter-label">
+               <input class="range-input range-max" type="text" inputmode="numeric" value="9000" name="max-price" style="width: 57px"> 
+               до
+            </label>
+          </div>
+          </div>
+          <div class="range">
+            <div class="range-scale">
+              <div class="range-bar" style="left: 0px; width: 216px">
+                <button class="range-toggle" type="button">
+                  <span class="visually-hidden">Изменить минимальную цену.</span>
+                </button>
+                <button class="range-toggle " type="button">
+                  <span class="visually-hidden">Изменить максимальную цену.</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </fieldset>
          <div class="button-selection">
          <button class=" button-apply" type="submit">
            <span class="transparent">Применить</span></button>
