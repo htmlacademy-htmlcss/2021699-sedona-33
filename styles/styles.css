@@ -483,7 +483,7 @@ ul .button.navigation-link {
 	flex-shrink: 0;
 	font-family: "PT Sans",'Arial', sans-serif;
 	font-weight: 700;
-	font-size: 22px;
+	font-size: 20px;
 	line-height: 26px;
 	color: #FFFFFF;
 	background-color: #83B3D3;
@@ -699,7 +699,7 @@ a[href^="tel:"] {
 
 .htmlacademy-link:focus {
 	fill: #756257;
-	border: 3px solid #83B3D3;
+	outline: 3px solid #83B3D3;
 	box-sizing: border-box;
 	border-radius: 10px;
 }
@@ -1604,7 +1604,7 @@ a[href^="tel:"] {
 	margin-bottom: 47px;
 }
 
-.newsletter-catalog .button.newsletter-button {
+.newsletter-catalog {
 	letter-spacing: -1.2px;
 }
 
