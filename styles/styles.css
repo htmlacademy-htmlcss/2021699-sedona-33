@@ -438,6 +438,10 @@ ul .button.navigation-link {
 	box-sizing: border-box;
 }
 
+.selection-sizing{
+	margin-left: -16px;
+}
+
 .button.button-all {
 	display: flex;
 	width: 575px;
@@ -600,7 +604,7 @@ ul .button.navigation-link {
 	outline: 2px solid #83B3D3;
 }
 
-.field:disabled {
+.field:invalid {
 	outline: 2px solid #FF5757;
 	box-sizing: border-box;
 	
@@ -888,11 +892,12 @@ a[href^="tel:"] {
 
 .toggle-min {
 	top: -8px;
+	margin-left: 216px;
 }
 
 .toggle-max {
 	top: -8px;
-	right: -10px;
+	right: -18px;
 }
 
 .range-wrapper-inputs {
@@ -1505,7 +1510,6 @@ a[href^="tel:"] {
 	position: relative;
 	display: flex;
 	align-items: center;
-	/* margin-right: 71px; */
 	margin-top: 2px;
 	width: 386px;
 }
@@ -1604,9 +1608,6 @@ a[href^="tel:"] {
 	margin-bottom: 47px;
 }
 
-.newsletter-catalog {
-	letter-spacing: -1.2px;
-}
 
 .newsletter-catalog .newsletter-form {
 	padding-bottom: 140px;
