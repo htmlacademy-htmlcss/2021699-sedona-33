@@ -243,7 +243,6 @@ ul .button.navigation-link {
 .welcome-description {
 	margin: 0;
 	padding-bottom: 80px;
-	;
 }
 
 .advantages-list {
@@ -283,7 +282,6 @@ ul .button.navigation-link {
 	padding: 0;
 	margin: 0 auto;
 	margin-bottom: 29px;
-	width: 400;
 	text-align: center;
 	font-weight: 700;
 	font-size: 24px;
@@ -433,9 +431,12 @@ ul .button.navigation-link {
 	font-weight: 400;
 	font-size: 22px;
 	line-height: 26px;
-	padding: 0 auto;
 	text-transform: none;
 	box-sizing: border-box;
+}
+
+.selection-sizing{
+	margin-left: -16px;
 }
 
 .button.button-all {
@@ -444,7 +445,6 @@ ul .button.navigation-link {
 	padding: 12px 0;
 	margin: 0 312px;
 	margin-bottom: 93px;
-	font-size: 700;
 	justify-content: center;
 	background-color: #756257;
 	color: #FFFFFF;
@@ -479,7 +479,6 @@ ul .button.navigation-link {
 	width: 200px;
 	height: 60px;
 	margin: 0;
-	padding: 0 auto;
 	flex-shrink: 0;
 	font-family: "PT Sans",'Arial', sans-serif;
 	font-weight: 700;
@@ -600,10 +599,9 @@ ul .button.navigation-link {
 	outline: 2px solid #83B3D3;
 }
 
-.field:disabled {
+.field--invalid {
 	outline: 2px solid #FF5757;
 	box-sizing: border-box;
-	
 }
 
 .footer-social {
@@ -657,7 +655,6 @@ ul .button.navigation-link {
 
 .footer-social-link:active {
 	fill: #68A2CA;
-	
 }
 
 .footer-contacts-address-phone:hover {
@@ -691,6 +688,9 @@ a[href^="tel:"] {
 .about-text {
 	margin-left: auto;
 	margin-right: 72px;
+}
+.text-academy{
+	margin-top: 22px;
 }
 
 .htmlacademy-link:hover {
@@ -793,9 +793,6 @@ a[href^="tel:"] {
 	margin-left: -3px;
 	margin-right: 5px;
 	margin-top: -3px;
-	
-	
-	
 }
 
 .breadcrumbs-home:active {
@@ -822,7 +819,6 @@ a[href^="tel:"] {
 	color: #FFFFFF;
 	opacity: 0.3;
 }
-/* Range */
 
 .range-scale {
 	position: relative;
@@ -888,11 +884,12 @@ a[href^="tel:"] {
 
 .toggle-min {
 	top: -8px;
+	margin-left: 216px;
 }
 
 .toggle-max {
 	top: -8px;
-	right: -10px;
+	right: -18px;
 }
 
 .range-wrapper-inputs {
@@ -1505,7 +1502,6 @@ a[href^="tel:"] {
 	position: relative;
 	display: flex;
 	align-items: center;
-	/* margin-right: 71px; */
 	margin-top: 2px;
 	width: 386px;
 }
@@ -1604,9 +1600,6 @@ a[href^="tel:"] {
 	margin-bottom: 47px;
 }
 
-.newsletter-catalog {
-	letter-spacing: -1.2px;
-}
 
 .newsletter-catalog .newsletter-form {
 	padding-bottom: 140px;
